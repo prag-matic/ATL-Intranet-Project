@@ -1,0 +1,132 @@
+@import url('fonts');
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("fonts/Montserrat-ExtraBold.ttf");
+}
+
+body {
+    background-color: white;
+    padding: 10px;
+    font-family: "Montserrat-ExtraBold";
+    background-image: url("../img/help-desk.png");
+    background-repeat: no-repeat;
+    background-position-y: 135%;
+    background-position-x: 100%;
+
+}
+.nav{
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    padding-right: 30px;
+}
+
+.back {
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    text-decoration: none;
+    color: #84bd00;
+}
+
+PW-grc127
+
+.container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    min-height: 100px;
+    /* max-height: 10vh; */
+}
+
+.left {
+    flex-direction: column;
+    flex: 1;
+    /* max-height: 500px; */
+}
+
+.divider {
+    display: flex;
+    border-left: solid #84bd00;
+    border-width: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    max-width: fit-content;
+}
+
+
+.heading {
+    padding-left: 15px;
+    margin: 0px;
+    font-family: Montserrat-ExtraBold;
+    font-size: 70px;
+    color: #84bd00;
+    line-height: 60px;
+}
+
+.heading span {
+    margin-top: 0;
+    display: inline-block;
+    font-family: Montserrat-ExtraBold;
+    color: #414F42;
+    font-size: 44px;
+    line-height: 40px;
+
+}
+
+img {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.right {
+    flex: 1;
+}
+
+.options {
+    font-family: "Montserrat-ExtraBold";
+    border-style: solid;
+    font-size: 30px;
+    margin: center;
+    border-width: 5px;
+    color:#414F42;
+    border-color: #84bd00;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.right .desc {
+    /* padding-left: 150px; */
+    padding-right: 70px;
+    font-size: 25px;
+    font-family: "Montserrat-Regular";
+    line-height: 40px;
+    padding-bottom: 100px;
+}
+
+.options:hover {
+    background-color: #84bd00;
+    color: #fff;
+    cursor: pointer;
+}
+

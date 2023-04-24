@@ -1,0 +1,276 @@
+@import url('fonts');
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("fonts/Montserrat-ExtraBold.ttf");
+}
+
+body {
+    background-color: white;
+    padding: 10px;
+    font-family: Montserrat-Black;
+    background-image: url("../img/hero-image.png");
+    background-repeat: no-repeat;
+    background-position-y: 120%;
+
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    min-height: 100px;
+    /* max-height: 10vh; */
+}
+
+.left {
+    flex: 1;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.divider {
+    display: flex;
+    border-left: 5px solid #84bd00;
+    border-width: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.heading {
+    padding-left: 15px;
+    margin: 0px;
+    font-family: Montserrat-ExtraBold;
+    font-size: 60px;
+    color: #84bd00;
+    line-height: 60px;
+}
+
+.heading span {
+    margin-top: 0;
+    display: inline-block;
+    font-family: Montserrat-ExtraBold;
+    color: #414F42;
+    font-size: 44px;
+    line-height: 20px;
+
+}
+
+img {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+
+.right {
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 30px;
+    flex: 0.5;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+        /* overflow: hidden; */
+            /* background-color: aquamarine; */
+}
+
+.helpdesk {
+    background-color: #fff;
+    padding: 3px;
+    border-style: solid;
+    border-width: 4px;
+    border-color:#84bd00;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.helpdesk  p {
+    
+    align-items: flex-start;
+    font-family: Montserrat-ExtraBold;
+    margin: auto;
+    /* margin-left: 125px;
+    margin-right: 125px; */
+    text-align: center;
+    font-size: 40px;
+    border: 10px;  
+    color: #414F42;
+}
+
+.helpdesk form{
+    margin-top: 120px;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.username {
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #84bd00;
+    
+    
+}
+
+.username:focus {
+    border-color: #414F42;
+    outline: none;
+    height: 2.5em;
+    border-radius: 15px;
+}
+
+.password {
+    display: block;
+    padding-left: 10px;
+    margin-top: 5px;
+    width: 250px;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #84bd00;
+
+}
+
+.password:focus {
+    border-color: #414F42;
+    border-radius: 15px;
+    height: 2.5em;
+    outline: none;
+}
+
+/* .submit {
+    margin: 3px;
+    display: flex;
+    width: 177px;
+    text-align: center;
+} */
+
+.submit {
+    margin: auto;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 0;
+    background-color: #84bd00;
+    color: #fff;
+    display: block;
+    width: 265px;
+    height: 2em;
+    font-size: 20px;
+    align-items: center;
+}
+
+.submit:hover {
+    background-color: #414F42;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+
+
+.meeting-room {
+    background-color: #fff;
+    min-width: 300px;
+    min-height: 150px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #84bd00;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.meeting-room p {
+    font-family: Montserrat-ExtraBold;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    border: 10px;
+    color: #414F42;
+}
+
+.meeting-room :hover {
+    background-color: #84bd00;
+    color:#fff;
+    cursor: pointer;
+}
+
+.admin-services {
+    background-color: #fff;
+    padding: 3px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #84bd00;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.admin-services p {
+    font-family: Montserrat-ExtraBold;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    border: 10px;
+    color: #414F42;
+}
+
+.admin-services :hover {
+    background-color: #84bd00;
+    color: #fff;
+    cursor: pointer;
+}
+
+.resources {
+    background-color: #fff;
+    padding: 3px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #84bd00;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.resources p {
+    font-family: Montserrat-ExtraBold;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    border: 10px;
+    color: #414F42;
+    }
+
+.resources :hover {
+    background-color: #84bd00;
+    color: #fff;
+    cursor: pointer;
+}
