@@ -30,6 +30,14 @@ body {
 
 }
 
+@media only screen and (min-width: 1367px) {
+
+body{
+    background-position-y: 150%;
+}
+
+}
+
 .container {
     display: flex;
     margin: auto;
@@ -134,9 +142,7 @@ img {
     min-width: 200px;
     border-style: solid;
     border-width: 2px;
-    border-color: #84bd00;
-    
-    
+    border-color: #84bd00;    
 }
 
 .username:focus {
